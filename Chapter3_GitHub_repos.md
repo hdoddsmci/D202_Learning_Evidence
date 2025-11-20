@@ -60,3 +60,12 @@
 * **Draft Issues vs. Issues:**
     * **Draft Issue:** A quick note on the board (not yet part of the repo code). Great for brainstorming.
     * **Converted Issue:** You can click "Convert to Issue" to turn a draft note into a real, trackable GitHub Issue.
+## Syncing and Releases
+* **Syncing Commands:**
+    * `git fetch`: Downloads new data (branches/commits) from GitHub but **does not** merge it into your files. Good for checking what's new.
+    * `git pull`: Does a `fetch` + `merge` in one step. Updates your current files with the latest remote changes.
+* **Releases:**
+    * A way to package a specific point in history as a downloadable "Version" (e.g., v1.0).
+    * **Semantic Versioning:** Standard format `vX.Y.Z` (Major.Minor.Patch).
+        * Example: `v1.0.0` (First official release).
+    * Useful for users who want to download a stable version of your software.
