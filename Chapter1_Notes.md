@@ -39,3 +39,14 @@
     * `git status`: Shows which files are changed, staged, or untracked.
     * `git restore <file>`: Discards changes in the working directory (undoes your work).
     * `git restore --staged <file>`: Removes a file from the staging area (keeps the changes but takes them out of the queue).
+## Ignoring Files
+* **Purpose:** Prevents Git from tracking sensitive files (API keys, passwords), operating system files (`.DS_Store`), or large dependencies (`node_modules`).
+* **.gitignore File:** A text file created at the project root listing patterns to ignore.
+    * **Syntax:**
+        * `filename.ext` (ignores specific file)
+        * `foldername/` (ignores entire folder, note the trailing slash)
+        * `*.log` (ignores all files with this extension)
+* **Important Rules:**
+    * Git does **not** track empty folders.
+    * If a file is *already* being tracked, adding it to `.gitignore` won't stop it. You must remove it from the cache first:
+    * Command: `git rm -r --cached .` (Clears cache so .gitignore takes effect).
