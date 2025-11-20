@@ -18,3 +18,16 @@
     * **Reviewers:** People assigned to check the code.
     * **Files Changed:** A "Diff" view showing exactly what lines were modified.
     * **Linking Issues:** You can link a PR to an issue (e.g., "Closes #4"). When the PR merges, the Issue closes automatically.
+ 
+    * ## Advanced Pull Request Features
+* **Draft Pull Requests:**
+    * A placeholder for work-in-progress code.
+    * Allows discussion but **cannot be merged** until marked "Ready for Review".
+    * Useful for getting early feedback before the code is finished.
+* **The Review Interface:**
+    * **Files Changed Tab:** Shows the specific code differences ("Diffs").
+    * **Line Comments:** You can click the `+` sign on any line of code to leave a specific comment or suggestion.
+    * **Review Actions:**
+        * **Comment:** General feedback without blocking.
+        * **Approve:** The code is good to merge.
+        * **Request Changes:** Blocks the merge until the specific issues are fixed.
