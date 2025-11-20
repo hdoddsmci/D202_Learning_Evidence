@@ -16,3 +16,14 @@
         * *Public:* Anyone can see it.
         * *Private:* Only you and invited collaborators can see it.
 * **Initialization:** You can optionally start with a README, .gitignore, or License.
+## Connecting and Pushing
+* **Managing Remotes:**
+    * **Command:** `git remote add origin <url>`
+        * Connects your local repository to a specific GitHub URL.
+        * `origin` is the standard nickname for your primary remote server.
+    * **Command:** `git remote -v` (Verbose: Lists the URLs you are connected to).
+* **Pushing Code:**
+    * **Command:** `git push -u origin <branch>`
+        * Uploads your branch and sets the "Upstream" link (`-u`).
+        * Once set, you can just type `git push` in the future.
+    * **Command:** `git push --all` (Pushes **all** local branches to GitHub at once).
