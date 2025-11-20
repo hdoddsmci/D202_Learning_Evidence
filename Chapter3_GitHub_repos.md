@@ -51,3 +51,12 @@
     * **"Require pull request before merging":** No one can push directly to `main`.
     * **"Require approval":** The code *cannot* be merged until a Code Owner reviews and clicks "Approve".
     * **Result:** This enforces a high quality standard and prevents accidental bugs in production.
+## GitHub Projects (Kanban Boards)
+* **Purpose:** A project management tool to organize Issues and Pull Requests across one or more repositories.
+* **Views:**
+    * **Table:** Spreadsheet view for detailed data.
+    * **Board (Kanban):** Visual columns (Todo, In Progress, Done).
+    * **Roadmap:** Timeline view for planning milestones.
+* **Draft Issues vs. Issues:**
+    * **Draft Issue:** A quick note on the board (not yet part of the repo code). Great for brainstorming.
+    * **Converted Issue:** You can click "Convert to Issue" to turn a draft note into a real, trackable GitHub Issue.
