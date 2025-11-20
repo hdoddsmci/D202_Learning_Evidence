@@ -78,3 +78,14 @@
     * Command: `git diff <commit-hash>` (Compares current code to a specific point in the past).
 * **Tools:**
     * **VS Code Source Control:** The sidebar in VS Code provides a visual way to stage changes.
+## Changing History (Undoing Mistakes)
+* **Amending Commits:**
+    * Used to fix the very last commit (e.g., fixing a typo in the message).
+    * Command: `git commit --amend`
+* **Resetting (Time Travel):**
+    * **Soft Reset:** Rewinds history but keeps your work safely in the folder.
+    * **Hard Reset:** Rewinds history and *deletes* changes (Dangerous!).
+    * Command: `git reset <commit-hash>`
+* **Rebasing:**
+    * A way to rewrite or clean up history (e.g., squashing commits together).
+    * *Note: Can be tricky on Windows due to file locking!*
