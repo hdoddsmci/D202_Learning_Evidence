@@ -105,3 +105,15 @@
 2.  **Make Changes:** Make meaningful commits on the new branch.
 3.  **Merge:** Switch back to `main` and merge the feature branch.
 4.  **Delete:** Remove the feature branch once merged to keep the repo clean.
+## Handling Merge Conflicts
+* **Definition:** Occurs when two branches modify the same line in a file differently. Git cannot automatically decide which one to keep.
+* **Conflict Markers:**
+    * `<<<<<<< HEAD`: Your current changes (on the branch you are merging INTO).
+    * `=======`: The separator.
+    * `>>>>>>> feature-branch`: The incoming changes (from the branch you are merging FROM).
+* **Resolution Process:**
+    1.  Open the conflicted file in VS Code.
+    2.  Use the "Merge Editor" (or manually delete markers) to choose the correct code.
+    3.  Save the file.
+    4.  Stage the file: `git add .`
+    5.  Commit the merge: `git commit -m "Fixed merge conflict"`
