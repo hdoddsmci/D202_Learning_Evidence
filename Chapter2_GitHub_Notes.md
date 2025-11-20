@@ -27,3 +27,24 @@
         * Uploads your branch and sets the "Upstream" link (`-u`).
         * Once set, you can just type `git push` in the future.
     * **Command:** `git push --all` (Pushes **all** local branches to GitHub at once).
+    ## GitHub Interface & Options
+* **Repository Header:**
+    * **Watch:** Get notifications when things happen in the repo.
+    * **Fork:** Create your own copy of someone else's repo to modify.
+    * **Star:** Like/Bookmark a repo (indicates popularity).
+* **Code Tab:**
+    * **Add File:** You can "Create new" or "Upload" (Drag & Drop works too).
+    * **Green "Code" Button:** Options to Clone (HTTPS/SSH), Open in Desktop, or Download ZIP.
+    * **Codespaces:** A full VS Code editor running in the cloud/browser.
+    * **Folder Creation Trick:** To create a folder on the website, type `foldername/` when naming a file. (Note: GitHub does not track empty folders).
+* **Other Key Tabs:**
+    * **Issues:** Track bugs and discuss potential changes.
+    * **Pull Requests (PRs):** Request to merge changes from one branch to another.
+    * **Actions:** Automation scripts (CI/CD) triggered by events like pushing code.
+    * **Projects:** Kanban boards for organizing tasks.
+    * **Wiki:** Simple documentation pages.
+    * **Insights:** Graphs and analytics about repo activity.
+* **Settings:**
+    * Manage **Collaborators** (give access to others).
+    * **GitHub Pages:** Host a website directly from your repo.
+    * **Danger Zone:** Where you delete the repository or change visibility (Public/Private).
