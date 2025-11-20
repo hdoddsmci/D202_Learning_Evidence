@@ -89,3 +89,19 @@
 * **Rebasing:**
     * A way to rewrite or clean up history (e.g., squashing commits together).
     * *Note: Can be tricky on Windows due to file locking!*
+    # Branching and Merging (Git Flow)
+
+## Key Commands
+* **List Branches:** `git branch` (Shows all local branches).
+* **Create & Switch:**
+    * New Command: `git switch -c <branch-name>`
+    * Old Command: `git checkout -b <branch-name>`
+* **Switch Branch:** `git switch <branch-name>`
+* **Merge:** `git merge <branch-name>` (Combines changes from that branch into your current one).
+* **Delete Branch:** `git branch -d <branch-name>`
+
+## The Git Flow Process
+1.  **Create a Branch:** Never work directly on `main`. Create a `feature` or `fix` branch.
+2.  **Make Changes:** Make meaningful commits on the new branch.
+3.  **Merge:** Switch back to `main` and merge the feature branch.
+4.  **Delete:** Remove the feature branch once merged to keep the repo clean.
