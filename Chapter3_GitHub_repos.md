@@ -69,3 +69,11 @@
     * **Semantic Versioning:** Standard format `vX.Y.Z` (Major.Minor.Patch).
         * Example: `v1.0.0` (First official release).
     * Useful for users who want to download a stable version of your software.
+    * ## Repository Insights
+* **Purpose:** Provides analytics on project activity, traffic, and community health.
+* **Key Tabs:**
+    * **Pulse:** Summary of active issues and PRs.
+    * **Contributors:** Graphs showing who is committing code and when.
+    * **Traffic:** Shows how many people are cloning or visiting your repo.
+    * **Community Standards:** A checklist (README, License, Code of Conduct) to ensure your project is welcoming.
+    * **Dependency Graph:** Shows libraries your project relies on (and if they have security alerts via Dependabot).
