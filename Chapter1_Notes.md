@@ -12,3 +12,15 @@
 * **Terminal:** Required to run commands (Git Bash on Windows, Terminal on Mac).
 * **Node.js:** Often required for handling web project tools.
 * **VS Code:** Recommended text editor.
+
+## Setting up Git
+* **Configuration:** Before starting, configure your identity so changes are credited to you.
+    * Command: `git config --global user.name "Your Name"`
+    * Command: `git config --global user.email "you@example.com"`
+* **Initializing:** `git init` transforms a current folder into a Git repository.
+    * This creates a hidden `.git` folder where Git stores all tracking data.
+* **Staging:** The "waiting area" for files before they are committed.
+    * Command: `git add .` (adds all files in the directory to staging).
+* **Committing:** Saves the snapshot of the staged files to history.
+    * Command: `git commit -m "Message"`
+* **Checking History:** `git log` shows a list of all past commits.
