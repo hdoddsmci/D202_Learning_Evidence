@@ -117,3 +117,12 @@
     3.  Save the file.
     4.  Stage the file: `git add .`
     5.  Commit the merge: `git commit -m "Fixed merge conflict"`
+    ## Utility Commands (Stash & Clean)
+* **Git Stash:** Saves your uncommitted work (dirty changes) into a temporary storage "stack" so you can switch branches safely.
+    * `git stash`: Stashes changes and reverts file to last commit.
+    * `git stash list`: Shows all stashed changes.
+    * `git stash apply`: Brings the changes back but keeps them in the stash.
+    * `git stash pop`: Brings changes back and **deletes** them from the stash.
+* **Git Clean:** Removes untracked files (new files not yet added).
+    * `git clean -n`: Dry run (shows what *would* be deleted).
+    * `git clean -fd`: Force delete all untracked files and directories.
