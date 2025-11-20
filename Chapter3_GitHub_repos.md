@@ -77,3 +77,16 @@
     * **Traffic:** Shows how many people are cloning or visiting your repo.
     * **Community Standards:** A checklist (README, License, Code of Conduct) to ensure your project is welcoming.
     * **Dependency Graph:** Shows libraries your project relies on (and if they have security alerts via Dependabot).
+## GitHub Shortcuts & Power Tips
+* **Keyboard Shortcuts:**
+    * **`?`**: Displays the help menu with all available shortcuts.
+    * **`/`**: Focuses the search bar (context-sensitive).
+    * **`Ctrl + K` / `Cmd + K`**: Opens the **Command Palette** (quick navigation).
+    * **`g` then `i`**: Go to Issues.
+    * **`g` then `p`**: Go to Pull Requests.
+* **The "Dot" Editor:**
+    * Pressing **`.` (period)** on any repo opens a lightweight VS Code editor in the browser (`github.dev`).
+* **URL Shortcuts:**
+    * `github.new` or `repo.new`: Instantly creates a new repository.
+* **Feature Preview:**
+    * Located in your profile menu. Allows you to enable beta features like the new Command Palette.
