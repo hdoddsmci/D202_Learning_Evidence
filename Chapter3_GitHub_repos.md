@@ -31,3 +31,13 @@
         * **Comment:** General feedback without blocking.
         * **Approve:** The code is good to merge.
         * **Request Changes:** Blocks the merge until the specific issues are fixed.
+## Finishing a Code Review
+* **Resolving Conversations:**
+    * When you fix an issue raised by a reviewer, click **Resolve conversation** to hide the comment thread.
+    * This signals that the feedback has been addressed.
+* **Pushing Fixes:**
+    * Simply make the changes on your local branch, commit, and push.
+    * The Pull Request updates **automatically** with the new commits.
+* **Merging:**
+    * Once all conversations are resolved and checks pass, click **Merge pull request**.
+    * **Confirm merge** to finalize the changes into the main branch.
