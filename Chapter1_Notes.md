@@ -50,3 +50,17 @@
     * Git does **not** track empty folders.
     * If a file is *already* being tracked, adding it to `.gitignore` won't stop it. You must remove it from the cache first:
     * Command: `git rm -r --cached .` (Clears cache so .gitignore takes effect).
+## Deleting and Renaming Files
+* **Deleting Files:**
+    * **Method 1 (Manual):** Deleting via file explorer/VS Code.
+        * Git sees this as a "change" that must be staged manually.
+    * **Method 2 (Git Command):** `git rm <filename>`
+        * Deletes the file AND stages the deletion immediately.
+        * **Undo:** Use `git restore --staged <file>` then `git restore <file>`.
+* **Renaming/Moving Files:**
+    * **Method 1 (Manual):** Renaming in file explorer.
+        * Git sees this as two steps: Deleting the old file + Creating a new untracked file.
+    * **Method 2 (Git Command):** `git mv <oldname> <newname>`
+        * Renames and stages the change in one step.
+        * `mv` stands for "move" (Linux command).
+* **Key Takeaway:** Git always compares your current work to the **last commit**. If you rename a file back to its original name before committing, Git sees "no changes."
