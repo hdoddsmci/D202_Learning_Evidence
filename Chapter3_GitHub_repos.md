@@ -41,3 +41,13 @@
 * **Merging:**
     * Once all conversations are resolved and checks pass, click **Merge pull request**.
     * **Confirm merge** to finalize the changes into the main branch.
+## Branch Protection & Code Owners
+* **CODEOWNERS File:**
+    * Assigns specific users to specific files or folders.
+    * **Effect:** When a Pull Request touches those files, these users are *automatically* added as reviewers.
+    * **Syntax:** `* @username` (Assigns everything to one person).
+* **Branch Protection Rules:**
+    * Located in **Settings > Branches**.
+    * **"Require pull request before merging":** No one can push directly to `main`.
+    * **"Require approval":** The code *cannot* be merged until a Code Owner reviews and clicks "Approve".
+    * **Result:** This enforces a high quality standard and prevents accidental bugs in production.
