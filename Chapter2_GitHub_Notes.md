@@ -66,7 +66,7 @@
 * **Special Mentions:**
     * **@username**: Notifies a person.
     * **#123**: Links to an Issue or Pull Request.
-    * **:emoji_name:**: Adds emojis (e.g., :tada: = 🎉).
+    * **:emoji_name:**: Adds emojis (e.g., :#tada: = 🎉).
 * **Alerts:**
     > [!NOTE]
     > Useful for highlighting info.
@@ -76,3 +76,15 @@
 * **Footnotes:**
     Here is a statement.[^1]
     [^1]: This is the footnote details at the bottom.
+    ## Essential Repository Files
+These special files tell GitHub how to display information to visitors and contributors.
+
+* **README.md**: The "Homepage" of your repo.
+    * Explains what the project does and how to use it.
+* **LICENSE**: Legal definition of how others can use your code (e.g., MIT, Apache).
+    * **Must** be in the root folder.
+* **CODE_OF_CONDUCT.md**: Sets expectations for behavior (e.g., no harassment).
+* **CONTRIBUTING.md**: Instructions for how people can help (e.g., "Run tests before submitting").
+* **SECURITY.md**: Instructions on how to report security vulnerabilities safely.
+* **CODEOWNERS**: Automatically assigns reviewers to Pull Requests based on which files were touched.
+    * Syntax: `*.js @username` (Assigns all JS files to a specific user).
