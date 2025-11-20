@@ -24,3 +24,18 @@
 * **Committing:** Saves the snapshot of the staged files to history.
     * Command: `git commit -m "Message"`
 * **Checking History:** `git log` shows a list of all past commits.
+## Understanding Git Environments
+* **Commit Structure:**
+    * **Hash:** A unique ID for every commit.
+    * **HEAD:** A pointer to the current branch (reality) you are working on.
+* **The Three Environments:**
+    1.  **Working Environment:** The files as they currently look on your computer.
+    2.  **Staging (The Queue):** A temporary area where you "queue up" changes before committing (`git add`). It's like "dating before marriage."
+    3.  **Commit:** The final snapshot saved to history with a unique hash.
+* **File States:**
+    * **Tracked:** Files that existed in the previous snapshot (can be *Unmodified*, *Modified*, or *Staged*).
+    * **Untracked:** New files that Git hasn't seen yet.
+* **Key Commands:**
+    * `git status`: Shows which files are changed, staged, or untracked.
+    * `git restore <file>`: Discards changes in the working directory (undoes your work).
+    * `git restore --staged <file>`: Removes a file from the staging area (keeps the changes but takes them out of the queue).
