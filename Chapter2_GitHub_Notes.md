@@ -48,4 +48,31 @@
     * Manage **Collaborators** (give access to others).
     * **GitHub Pages:** Host a website directly from your repo.
     * **Danger Zone:** Where you delete the repository or change visibility (Public/Private).
+    ## GitHub Flavored Markdown (GFM) Features
+* **Task Lists:** Great for tracking requirements.
+    - [x] Completed Task (use `[x]`)
+    - [ ] Incomplete Task (use `[ ]`)
+* **Tables:**
+    | Feature | Status | Priority |
+    | :--- | :---: | ---: |
+    | Login | Done | High |
+    | Logout | Pending | Low |
+    *(Colons align text: Left `:---`, Center `:---:`, Right `---:`)*
+* **Collapsible Sections:**
+    <details>
+    <summary>Click to see hidden details</summary>
+    Here is the hidden content! Great for long logs or spoilers.
+    </details>
+* **Special Mentions:**
+    * **@username**: Notifies a person.
+    * **#123**: Links to an Issue or Pull Request.
+    * **:emoji_name:**: Adds emojis (e.g., :tada: = 🎉).
+* **Alerts:**
+    > [!NOTE]
+    > Useful for highlighting info.
     
+    > [!WARNING]
+    > Watch out for this!
+* **Footnotes:**
+    Here is a statement.[^1]
+    [^1]: This is the footnote details at the bottom.
