@@ -64,3 +64,17 @@
         * Renames and stages the change in one step.
         * `mv` stands for "move" (Linux command).
 * **Key Takeaway:** Git always compares your current work to the **last commit**. If you rename a file back to its original name before committing, Git sees "no changes."
+* ## Tracking Differences and History
+* **Checking Changes:**
+    * **Command:** `git diff`
+    * Shows exactly what lines changed between your working file and the last commit.
+    * **Key:** `+` (green) lines are added, `-` (red) lines are deleted.
+    * **Tip:** Press `q` to exit if the diff is too long.
+* **Checking History:**
+    * **Command:** `git log` (shows full history).
+    * **Command:** `git log --oneline` (shows a cleaner, shorter list of commits).
+    ![My Git Log Evidence](git-log-proof.png)
+* **Comparing Commits:**
+    * Command: `git diff <commit-hash>` (Compares current code to a specific point in the past).
+* **Tools:**
+    * **VS Code Source Control:** The sidebar in VS Code provides a visual way to stage changes.
