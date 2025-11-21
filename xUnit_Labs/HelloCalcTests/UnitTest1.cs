@@ -52,4 +52,31 @@ public class CalculatorTests
         // Assert
         Assert.Equal(expected, result);
     }
+    [Fact]
+    public void TestToolkitChecklist()
+    {
+        // 1. False
+        bool isComplete = false;
+        Assert.False(isComplete);
+
+        // 2. Null / NotNull
+        object myObject = null;
+        Assert.Null(myObject);
+
+        myObject = new object();
+        Assert.NotNull(myObject);
+
+        // 3. Contains
+        int[] numbers = new int[] { 1, 2, 3, 42 };
+        Assert.Contains(42, numbers);
+
+        // 4. InRange
+        int actualValue = 5;
+        Assert.InRange(actualValue, 1, 10);
+
+        // 5. Empty / NotEmpty
+        int[] emptyList = new int[] { };
+        Assert.Empty(emptyList);
+        Assert.NotEmpty(numbers);
+    }
 }
