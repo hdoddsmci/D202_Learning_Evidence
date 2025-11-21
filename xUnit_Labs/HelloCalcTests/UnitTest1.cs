@@ -91,4 +91,23 @@ public class CalculatorTests
         // Assert
         Assert.Equal(1, result);
     }
+    [Theory]
+    [InlineData(new int[] { 1, 2, 3 }, 6)]
+    [InlineData(new int[] { 4, 5, 6 }, 15)]
+    public void Add_MultipleNumbers_ReturnsSum(int[] inputs, int expected)
+    {
+        var calc = new Calculator();
+        var result = calc.Add(inputs);
+        Assert.Equal(expected, result);
+    }
+
+    [Theory]
+    [InlineData(new int[] { 5, 2, 1 }, 2)] // 5 - 2 = 3, then 3 - 1 = 2
+    [InlineData(new int[] { 10, 5, 2 }, 3)] // 10 - 5 = 5, then 5 - 2 = 3
+    public void Subtract_MultipleNumbers_ReturnsDifference(int[] inputs, int expected)
+    {
+        var calc = new Calculator();
+        var result = calc.Subtract(inputs);
+        Assert.Equal(expected, result);
+    }
 }

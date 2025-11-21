@@ -1,15 +1,19 @@
-﻿namespace HelloCalcApp;
+﻿using System.Linq; // Needed for .Sum() and .Aggregate()
+
+namespace HelloCalcApp;
 
 public class Calculator
 {
-    public int Add(int a, int b)
+    // Updated to accept a list of numbers
+    public int Add(params int[] numbers)
     {
-        return a + b;
+        return numbers.Sum();
     }
 
-    // NEW CODE
-    public int Subtract(int a, int b)
+    // Updated to subtract a list of numbers sequentially
+    public int Subtract(params int[] numbers)
     {
-        return a - b;
+        // Uses Aggregate to subtract the next number from the previous result
+        return numbers.Aggregate((a, b) => a - b);
     }
 }
