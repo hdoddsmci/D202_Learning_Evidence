@@ -69,3 +69,16 @@
     * **Semantic Versioning:** Standard format `vX.Y.Z` (Major.Minor.Patch).
         * Example: `v1.0.0` (First official release).
     * Useful for users who want to download a stable version of your software.
+    ## GitHub Shortcuts & Power Tips
+* **Keyboard Shortcuts:**
+    * **`?`**: Displays the help menu with all available shortcuts.
+    * **`/`**: Focuses the search bar (context-sensitive).
+    * **`Ctrl + K` / `Cmd + K`**: Opens the **Command Palette** (quick navigation).
+    * **`g` then `i`**: Go to Issues.
+    * **`g` then `p`**: Go to Pull Requests.
+* **The "Dot" Editor:**
+    * Pressing **`.` (period)** on any repo opens a lightweight VS Code editor in the browser (`github.dev`).
+* **URL Shortcuts:**
+    * `github.new` or `repo.new`: Instantly creates a new repository.
+* **Feature Preview:**
+    * Located in your profile menu. Allows you to enable beta features like the new Command Palette.
