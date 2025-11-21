@@ -79,4 +79,16 @@ public class CalculatorTests
         Assert.Empty(emptyList);
         Assert.NotEmpty(numbers);
     }
+    [Fact]
+    public void Subtract_GivenTwoNumbers_ReturnsDifference()
+    {
+        // Arrange
+        var calc = new Calculator();
+
+        // Act
+        int result = calc.Subtract(3, 2); // RED: This will error because Subtract doesn't exist yet!
+
+        // Assert
+        Assert.Equal(1, result);
+    }
 }

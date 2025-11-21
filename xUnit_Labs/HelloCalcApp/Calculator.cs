@@ -6,4 +6,10 @@ public class Calculator
     {
         return a + b;
     }
+
+    // NEW CODE
+    public int Subtract(int a, int b)
+    {
+        return a - b;
+    }
 }
