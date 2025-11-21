@@ -125,4 +125,15 @@ public class CalculatorTests
         Assert.Equal(6, calc.History[0]);    // Check first result
         Assert.Equal(15, calc.History[1]);   // Check second result
     }
+    [Theory]
+    [InlineData("2 + 3", 5)]
+    [InlineData("5 - 3", 2)]
+    [InlineData("4 + 6 - 2", 8)]
+    [InlineData("10 + 20 - 5 + 8", 33)]
+    public void Parse_Equation_String(string equation, int expected)
+    {
+        var calc = new Calculator();
+        int result = calc.Calculate(equation);
+        Assert.Equal(expected, result);
+    }
 }

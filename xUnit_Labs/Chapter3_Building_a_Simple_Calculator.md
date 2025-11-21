@@ -21,3 +21,17 @@
 * **C# Features Used:**
     * **`params` keyword:** Allows a method to accept a variable number of arguments (e.g., `Add(1, 2, 3, 4)`).
     * **LINQ:** Used `.Sum()` and `.Aggregate()` to simplify the math logic into single lines.
+    * ## Testing State & History
+* **State:** Data stored inside an object (like a List of previous results).
+* **Challenge:** We must ensure the state is correct after every operation.
+* **Test Strategy:**
+    1.  Perform multiple actions (e.g., Add twice).
+    2.  Check the `Count` of the history list.
+    3.  Verify specific items at specific indexes (e.g., `History[0]`
+ ## Parsing Equation Strings
+* **Goal:** Process a string (e.g., `"10 + 5 - 2"`) and return the calculated integer.
+* **Logic:**
+    1.  **Clean:** Remove whitespace.
+    2.  **Split:** Separate numbers from operators (`+`, `-`).
+    3.  **Iterate:** Loop through the operators, applying the math sequentially to a running total.
+* **Dictionary Pattern:** Using a `Dictionary<char, Func<int, int, int>>` is a clean way to map symbols (`+`) to code actions (`(a,b) => a+b`).
