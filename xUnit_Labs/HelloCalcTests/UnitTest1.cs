@@ -110,4 +110,19 @@ public class CalculatorTests
         var result = calc.Subtract(inputs);
         Assert.Equal(expected, result);
     }
+    [Fact]
+    public void Add_AndStoreInHistory()
+    {
+        // Arrange
+        var calc = new Calculator();
+
+        // Act
+        int result1 = calc.Add(1, 2, 3);     // Expected: 6
+        int result2 = calc.Add(4, 5, 6);     // Expected: 15
+
+        // Assert
+        Assert.Equal(2, calc.History.Count); // Check list size
+        Assert.Equal(6, calc.History[0]);    // Check first result
+        Assert.Equal(15, calc.History[1]);   // Check second result
+    }
 }

@@ -1,19 +1,36 @@
-﻿using System.Linq; // Needed for .Sum() and .Aggregate()
+﻿using System.Collections.Generic; // Needed for List
+using System.Linq;
 
 namespace HelloCalcApp;
 
 public class Calculator
 {
-    // Updated to accept a list of numbers
-    public int Add(params int[] numbers)
+    // 1. Create the History property
+    public List<int> History { get; private set; }
+
+    // 2. Initialize it in the Constructor
+    public Calculator()
     {
-        return numbers.Sum();
+        History = new List<int>();
     }
 
-    // Updated to subtract a list of numbers sequentially
+    public int Add(params int[] numbers)
+    {
+        int result = numbers.Sum();
+
+        // 3. Save to History
+        History.Add(result);
+
+        return result;
+    }
+
     public int Subtract(params int[] numbers)
     {
-        // Uses Aggregate to subtract the next number from the previous result
-        return numbers.Aggregate((a, b) => a - b);
+        int result = numbers.Aggregate((a, b) => a - b);
+
+        // 3. Save to History (Optional, but good practice)
+        History.Add(result);
+
+        return result;
     }
 }
