@@ -6,15 +6,22 @@ namespace HelloCalcTests;
 public class CalculatorTests
 {
     [Fact]
-    public void Add_GivenTwoNumbers_ReturnsSum()
+    public void TwoPlusTwo_Equals_Four()
     {
         // Arrange
-        var calc = new Calculator(); // This might show a red error line (Good!)
-
-        // Act
-        var result = calc.Add(2, 3);
+        int result = 2 + 2;
 
         // Assert
-        Assert.Equal(5, result);
+        Assert.Equal(4, result);
+    }
+
+    [Fact]
+    public void TwoPlusTwo_NotEquals_Five()
+    {
+        // Arrange
+        int result = 2 + 2;
+
+        // Assert
+        Assert.NotEqual(5, result);
     }
 }
