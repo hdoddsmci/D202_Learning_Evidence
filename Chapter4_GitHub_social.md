@@ -32,3 +32,12 @@
     * **Markdown:** Supports full Markdown syntax.
     * **Custom Footer/Sidebar:** You can add `_Footer.md` or `_Sidebar.md` to content that appears on every page.
 * **Visibility:** Restricted on private repos (requires Pro account), but free on public repos.
+## GitHub Pages
+* **Purpose:** Hosts a static website directly from your repository for free.
+* **URL Structure:** `https://username.github.io/repository-name`
+* **Setup:**
+    * Go to **Settings > Pages**.
+    * **Source:** Deploy from a branch.
+    * **Branch:** Select `main` (or `gh-pages`).
+    * **Folder:** Select `/ (root)` or `/docs`.
+* **Special Repo:** If you name a repo `username.github.io`, it becomes your main personal website (e.g., `https://username.github.io`).
