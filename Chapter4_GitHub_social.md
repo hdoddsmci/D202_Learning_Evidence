@@ -24,3 +24,11 @@
     * **Versioning:** Gists track history (revisions) just like a full repo.
     * **Embedding:** You can get a script tag to embed a Gist on a blog or website.
     * **Forking:** You can copy someone else's Gist to your account to modify it.
+    ## GitHub Wikis
+* **Purpose:** A built-in, multi-page system for hosting long-form documentation (like a user manual).
+* **Technical Detail:** The Wiki is actually a separate Git repository hidden behind your main repo. You can clone it separately!
+* **Features:**
+    * **Multi-page navigation:** Automatically creates a sidebar for different pages.
+    * **Markdown:** Supports full Markdown syntax.
+    * **Custom Footer/Sidebar:** You can add `_Footer.md` or `_Sidebar.md` to content that appears on every page.
+* **Visibility:** Restricted on private repos (requires Pro account), but free on public repos.
