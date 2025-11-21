@@ -16,3 +16,11 @@
     * **Watching:** Toggle "Automatically watch repositories" to avoid getting subscribed to everything you visit.
     * **Actions:** Useful to turn on emails for "Failed Workflows" so you know if your code breaks.
 * **Inbox Filters:** You can filter by "Assigned to me" or group notifications by Repository to keep things organized.
+## GitHub Gists
+* **Purpose:** A simple way to share code snippets or notes without creating a full repository.
+* **Access:** Go to `gist.github.com` or type `gist.new` in your browser.
+* **Features:**
+    * **Public vs Secret:** Public gists are searchable; Secret gists are only visible to those with the link.
+    * **Versioning:** Gists track history (revisions) just like a full repo.
+    * **Embedding:** You can get a script tag to embed a Gist on a blog or website.
+    * **Forking:** You can copy someone else's Gist to your account to modify it.
